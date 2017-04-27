@@ -1,0 +1,11 @@
+a
+b
+c
+logs
+ooo
+
+想压缩当前目录下所有文件，除了文件 c 和目录ooo ，并将压缩后的包(test.tar.gz)放置在当前目录下的跟目录下
+
+操作：
+tar -zcvf test.tar.gz  --exclude=ooo --exclude=c --exclude=test.tar.gz *
+说明：因为目标文件为test.tar.gz，在压缩过程中会产生test.tar.gz，也需要排除
