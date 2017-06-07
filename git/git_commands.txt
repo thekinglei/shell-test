@@ -1,0 +1,2 @@
+恢复删除的所有文件 git ls-files -d | xargs git checkout --
+恢复删除的所有文件（路径或文件含中文）git ls-files -d | xargs echo -e | xargs git checkout --
