@@ -9,3 +9,19 @@ read -n 5 -s -t 2 -d ":" -p "Enter your password:" var
 -s:无回显，输入时不显示
 -t：超时设置，2s
 -p：提示
+
+
+更改登录shell
+
+更改为bash：
+
+chsh -s /bin/bash
+
+更改为sh
+
+chsh -s /bin/sh
+
+更改为fish：
+安装fish：apt-get install fish
+
+chsh -s /bin/fish
